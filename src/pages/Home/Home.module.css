@@ -1,0 +1,139 @@
+.home {
+  min-height: 100vh;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8rem 2rem;
+  background-color: var(--color-light);
+}
+
+.heroContent {
+  max-width: 600px;
+}
+
+.storeJapanese {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 3rem;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.storeName {
+  font-size: 1rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--color-wood);
+  margin-bottom: 1.5rem;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  color: var(--color-text);
+}
+
+.shopButton {
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
+  background-color: var(--color-accent);
+  color: #f5f0e8;
+  letter-spacing: 0.15em;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+}
+
+.shopButton:hover {
+  background-color: var(--color-text);
+}
+
+/* Philosophy */
+.philosophy {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.philosophy h2 {
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-wood);
+  margin-bottom: 1.5rem;
+}
+
+.philosophy p {
+  font-size: 1rem;
+  line-height: 1.9;
+  margin-bottom: 2.5rem;
+}
+
+.quote {
+  border-left: 2px solid var(--color-accent);
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+.quote p {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.quote span {
+  font-size: 0.85rem;
+  color: var(--color-wood);
+  font-style: italic;
+}
+
+/* Categories */
+.categories {
+  background-color: var(--color-light);
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-wood);
+  margin-bottom: 3rem;
+}
+
+.categoryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.categoryCard {
+  padding: 2.5rem 1.5rem;
+  background-color: var(--color-bg);
+  transition: transform 0.2s ease;
+}
+
+.categoryCard:hover {
+  transform: translateY(-4px);
+}
+
+.categoryCard h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.categoryCard p {
+  font-size: 0.8rem;
+  color: var(--color-wood);
+}

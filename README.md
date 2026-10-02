@@ -1,16 +1,23 @@
-# React + Vite
+# Shizuku (雫) — Mock E-Commerce Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A mock shopping cart application built with React. Shizuku is a Japanese-inspired sustainable lifestyle store concept, featuring product browsing, cart management, and a minimalist nature aesthetic.
 
-Currently, two official plugins are available:
+**Live Demo:** https://shopping-cart-xi-sable.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Browse products fetched from the FakeStore API
+- Add items to cart with quantity selection
+- Real-time cart count in the navigation bar
+- Toast notification on add to cart
+- Adjust quantities and remove items from the cart page
+- Responsive navigation with React Router
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Built With
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- React Router
+- CSS Modules
+- Vitest + React Testing Library
+- FakeStore API
+- Vite

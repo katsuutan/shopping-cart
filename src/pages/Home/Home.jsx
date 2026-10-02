@@ -1,11 +1,22 @@
 import { Link } from 'react-router';
 import styles from './Home.module.css';
+import heroVideo from '../../assets/hero.mp4';
 
 const Home = () => {
   return (
     <main className={styles.home}>
       {/* Hero Section */}
       <section className={styles.hero}>
+        <video
+          className={styles.heroVideo}
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src={heroVideo} type="video/mp4" />
+        </video>
+        <div className={styles.heroOverlay} />
         <div className={styles.heroContent}>
           <p className={styles.storeJapanese}>雫</p>
           <h1 className={styles.storeName}>Shizuku</h1>

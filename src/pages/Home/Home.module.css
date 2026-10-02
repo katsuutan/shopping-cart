@@ -4,53 +4,79 @@
 
 /* Hero */
 .hero {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 8rem 2rem;
-  background-color: var(--color-light);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.heroVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 1;
 }
 
 .heroContent {
+  position: relative;
+  z-index: 2;
   max-width: 600px;
 }
 
 .storeJapanese {
   font-family: 'Noto Serif JP', serif;
-  font-size: 3rem;
-  color: var(--color-accent);
+  font-size: 4rem;
+  color: #ffffff;
   margin-bottom: 0.5rem;
 }
 
 .storeName {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
   letter-spacing: 0.4em;
   text-transform: uppercase;
-  color: var(--color-wood);
   margin-bottom: 1.5rem;
 }
 
 .tagline {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  color: #ffffff;
   font-weight: 300;
   margin-bottom: 2.5rem;
-  color: var(--color-text);
 }
 
 .shopButton {
   display: inline-block;
   padding: 0.8rem 2.5rem;
-  background-color: var(--color-accent);
+  background-color: transparent;
   color: #f5f0e8;
+  border: 1px solid #f5f0e8;
   letter-spacing: 0.15em;
   font-size: 0.85rem;
   text-transform: uppercase;
-  transition: background-color 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .shopButton:hover {
-  background-color: var(--color-text);
+  background-color: #f5f0e8;
+  color: var(--color-text);
 }
 
 /* Philosophy */

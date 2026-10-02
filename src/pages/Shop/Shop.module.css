@@ -1,0 +1,28 @@
+.shop {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.heading {
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-wood);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 4rem;
+  color: var(--color-wood);
+  letter-spacing: 0.1em;
+}

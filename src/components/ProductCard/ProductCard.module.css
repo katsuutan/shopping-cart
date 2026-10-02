@@ -1,0 +1,99 @@
+.card {
+  background-color: var(--color-light);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.imageWrapper {
+  background-color: var(--color-bg);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.image {
+  max-height: 160px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+.price {
+  font-size: 0.9rem;
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+.quantityControl {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.quantityButton {
+  width: 28px;
+  height: 28px;
+  background: none;
+  border: 1px solid var(--color-wood);
+  color: var(--color-text);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.quantityButton:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.quantityInput {
+  width: 40px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid var(--color-wood);
+  background: transparent;
+  color: var(--color-text);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.9rem;
+  padding: 0.2rem 0;
+}
+
+.quantityInput:focus {
+  outline: none;
+  border-bottom-color: var(--color-accent);
+}
+
+.addButton {
+  margin-top: auto;
+  padding: 0.7rem;
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  border: none;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+}
+
+.addButton:hover {
+  background-color: var(--color-text);
+}
